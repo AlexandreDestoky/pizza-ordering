@@ -6,6 +6,6 @@ export default function Navbar() {
     <NavLink to="/">Pizza</NavLink>
     <NavLink to="/dessert">Dessert</NavLink>
     <NavLink to="/drink">Drink</NavLink>
-    <NavLink to="/paiement">Paiement</NavLink>
+    <NavLink to="/payment">Paiement</NavLink>
   </nav>;
 }
