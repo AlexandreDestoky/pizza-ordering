@@ -3,8 +3,15 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "../../shared/Button.style";
 import { Content, Wrapper } from "./Product.style";
 import { convToDollar } from "../../shared/helper.js";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../features/cart/cartSlice";
+
 export default function Product(props) {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  // console.log(props);
+  console.log("mise à jour de " + props.name);
+
   return (
     <Wrapper>
       <img src={props.img} alt={props.name} onClick={() => navigate(`${props.id}`)} />
@@ -12,7 +19,7 @@ export default function Product(props) {
         <h2>{props.name.toUpperCase()}</h2>
         <div>
           <p>{convToDollar(props.price)}</p>
-          <Button>ADD</Button>
+          <Button onClick={()=> dispatch(addToCart(props))}>ADD</Button>
         </div>
       </Content>
     </Wrapper>
