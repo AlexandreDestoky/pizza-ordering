@@ -1,12 +1,11 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   return <nav>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+    <NavLink to="/">Pizza</NavLink>
+    <NavLink to="/dessert">Dessert</NavLink>
+    <NavLink to="/drink">Drink</NavLink>
+    <NavLink to="/paiement">Paiement</NavLink>
   </nav>;
 }

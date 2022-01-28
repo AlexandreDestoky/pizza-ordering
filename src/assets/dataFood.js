@@ -1,12 +1,14 @@
 export const dataFood = {
   pizza: [
     {
+      id: 1,
       name: "pepperoni",
       price: 9,
       ing: ["Tomato sauce", "Mozzarella", "Mushrooms", "Pepperoni"],
       img: require("./pizza/pepperoni.webp"),
     },
     {
+      id: 2,
       name: "chicken",
       price: 8,
       ing: [
@@ -21,6 +23,7 @@ export const dataFood = {
       img: require("./pizza/chicken.webp"),
     },
     {
+      id: 3,
       name: "shrimp",
       price: 11,
       ing: [
@@ -33,36 +36,42 @@ export const dataFood = {
       img: require("./pizza/shrimp.webp"),
     },
     {
+      id: 4,
       name: "hawaiian",
       price: 10,
       ing: ["Tomato sauce", "mozzarella", "grilled ham", "extra mozzarella & pineapple"],
       img: require("./pizza/hawaiian.jpg"),
     },
     {
+      id: 5,
       name: "4 cheese",
       price: 11,
       ing: ["Tomato sauce", "mozzarella", "gorgonzola", "emmental", "goat cheese"],
       img: require("./pizza/4_cheese.webp"),
     },
     {
+      id: 6,
       name: "4 stagioni",
       price: 10,
       ing: ["Tomato sauce", "mozzarella", "pepperoni", "ham", "peppers", "mushrooms"],
       img: require("./pizza/4_stagioni.webp"),
     },
     {
+      id: 7,
       name: "margherita",
       price: 8,
       ing: ["Tomato sauce", "mozzarella", "extra mozzarella", "oregano"],
       img: require("./pizza/margherita.jpg"),
     },
     {
+      id: 8,
       name: "forestiere",
       price: 9.5,
       ing: ["Tomato sauce", "mozzarella", "bacon", "grilled ham", "mushrooms"],
       img: require("./pizza/forestiere.webp"),
     },
     {
+      id: 9,
       name: "cannibale",
       price: 12,
       ing: ["BBQ sauce", "mozzarella", "ground beef", "merguez", "chicken"],
@@ -71,18 +80,21 @@ export const dataFood = {
   ],
   dessert: [
     {
+      id: 33,
       name: "beignets chocolate",
       price: 3,
       ing: ["4 freshly baked mini Beignets with creamy chocolate"],
       img: require("./dessert/beignet_chocolate.webp"),
     },
     {
+      id: 49,
       name: "chocolate chip cookie",
       price: 1.95,
       ing: ["An american Chocolate Chip Cookie with delicious chocolate!"],
       img: require("./dessert/chocolate_chip_cookie.jpg"),
     },
     {
+      id: 100,
       name: "lava cake",
       price: 2.95,
       ing: ["hot chocolate souffle"],
@@ -91,24 +103,28 @@ export const dataFood = {
   ],
   drink: [
     {
+      id: 45,
       name: "Fanta Orange",
       price: 1.7,
       ing: ["33cl Fanta Orange"],
       img: require("./drink/fanta.webp"),
     },
     {
+      id: 88,
       name: "Coca-Cola",
       price: 1.7,
       ing: ["33cl Coca-Cola"],
       img: require("./drink/coca.webp"),
     },
     {
+      id: 77,
       name: "Sprite",
       price: 1.7,
       ing: ["33cl Sprite"],
       img: require("./drink/sprite.webp"),
     },
     {
+      id: 142,
       name: "Coca-Cola Zero",
       price: 1.7,
       ing: ["33cl Coca-Cola Zero"],
