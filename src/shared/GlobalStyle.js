@@ -7,14 +7,15 @@ export const GlobalStyle = createGlobalStyle`
 
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
   }
 
   body {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: floralwhite
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
   }
 
 `

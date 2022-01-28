@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
 export const IconImg = styled.img`
-  width: 200px;
-  border:1px solid black;
+  height: 70px;
+  cursor: pointer;
 `;
+
+export const Wrapper = styled.header`
+position: sticky;
+top:0;
+display: flex;
+background-color: white;
+
+`
