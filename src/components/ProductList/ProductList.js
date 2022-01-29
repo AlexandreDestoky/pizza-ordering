@@ -14,7 +14,7 @@ export default function ProductList() {
     if (!foodType.includes(product)) {
       navigate("/");
     }
-  }, []);
+  }, [product]);
 
   return <Wrapper>{Products && Products.map(el => <Product key={el.id} {...el} />)}</Wrapper>;
 }

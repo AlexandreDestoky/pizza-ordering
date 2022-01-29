@@ -12,7 +12,7 @@ export default function ProductDetail() {
     if (!foodType.includes(product) || !curProduct) {
       navigate("/");
     }
-  }, []);
+  }, [foodType,curProduct]);
 
   return (
     <>
