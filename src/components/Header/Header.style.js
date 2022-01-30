@@ -14,9 +14,10 @@ export const Wrapper = styled.header`
   `;
 
 export const Content = styled.div`
-justify-content: space-between;
+/* justify-content: space-between; */
   align-items: center;
   display: flex;
+  /* gap:2rem; */
   width: 80%;
   margin: auto;
   height: 100%;

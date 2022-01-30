@@ -3,9 +3,11 @@ import styled from "styled-components";
 export const Wrapper = styled.nav`
   justify-content: flex-end;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap:2rem;
   font-size: 1.5rem;
   /* flex: auto; */;
+  flex:1 1 0px;
   width: 40%;
   a {
     /* height: 70px;
@@ -14,7 +16,6 @@ export const Wrapper = styled.nav`
     justify-content: center; */
     text-decoration: none;
     /* background-color: #6f1d1b; */
-    /* flex:1 1 0px; */
     color: black;
     &.active {
       /* background-color: #4f1d1b; */
