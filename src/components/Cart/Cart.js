@@ -1,9 +1,10 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { Wrapper } from "./Cart.style";
+import { Total, Wrapper, CartDetail } from "./Cart.style";
 import { convToDollar } from "../../shared/helper";
 import CartProduct from "../CartProduct/CartProduct";
+import { Button } from "../../shared/Button.style";
 
 export default function Cart() {
   const dispatch = useDispatch();
@@ -13,10 +14,19 @@ export default function Cart() {
   console.log(redux);
   return (
     <Wrapper>
-      <p>Cart Total : {convToDollar(total)}</p>
-      {products.map(el => (
-        <CartProduct key={el.id} {...el} />
-      ))}
+      <CartDetail>
+        <h2>Your Order</h2>
+        <Total>
+          <span>Total</span>
+          <span>{convToDollar(total)}</span>
+        </Total>
+        {products.map(el => (
+          <CartProduct key={el.id} {...el} />
+        ))}
+      </CartDetail>
+      <Button bg="forestgreen" hover="green" full>
+        PAY ({convToDollar(total)})
+      </Button>
     </Wrapper>
   );
 }

@@ -24,10 +24,21 @@ export const cartSlice = createSlice({
       }
       state.total = state.products.reduce((a, b) => a + b.totalPrice, 0);
     },
+    removeOfCart(state,action) {
+      const removeProduct = action.payload;
+      const product = state.products.find(product => product.id === removeProduct.id);
+      if(product.quantity > 1) {
+        product.quantity = product.quantity - 1;
+        product.totalPrice = product.totalPrice - removeProduct.price;
+      } else {
+        state.products = state.products.filter(product => product.id !== removeProduct.id)
+      }
+      state.total = state.products.reduce((a, b) => a + b.totalPrice, 0);
+    }
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { addToCart } = cartSlice.actions;
+export const { addToCart ,removeOfCart} = cartSlice.actions;
 
 export default cartSlice.reducer;
