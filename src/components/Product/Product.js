@@ -9,8 +9,6 @@ import { addToCart } from "../../features/cart/cartSlice";
 export default function Product(props) {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  // console.log(props);
-  console.log("mise à jour de " + props.name);
 
   return (
     <Wrapper>

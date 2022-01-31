@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  border: 1px solid #ddd;
   background-color: white;
   border-radius: 5px;
   position: sticky;
