@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   border-bottom: 1px dashed black;
+  user-select: none;
   padding:10px;
   p {
     display: flex;

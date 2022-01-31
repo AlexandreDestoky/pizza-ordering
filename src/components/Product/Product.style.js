@@ -17,6 +17,7 @@ export const Content = styled.div`
     justify-content: space-between;
     align-items: center;
     font-size: 1.3rem;
+    margin-top: 10px;
   }
   font-size: .9rem;
   padding: 5px 10px;

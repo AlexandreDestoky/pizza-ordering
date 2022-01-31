@@ -1,16 +1,25 @@
 import React from "react";
-import { Content, IconImg, Wrapper } from "./Header.style";
+import { Content, Hamburger, IconImg, Wrapper, NavBar } from "./Header.style";
 import icon from "../../assets/svg.svg";
-import Navbar from "../Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
+import menu from "../../assets/menu.svg";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const navigate = useNavigate();
+  const [isNavShow, setIsNavShow] = useState(false);
+  console.log(isNavShow);
   return (
     <Wrapper>
+      <Hamburger src={menu} onClick={() => setIsNavShow(!isNavShow)} />
       <Content>
         <IconImg src={icon} onClick={() => navigate("/")} />
-        <Navbar />
+        <NavBar isNavShow={isNavShow} onClick={() => setIsNavShow(!isNavShow)}>
+          <NavLink to="/pizza">Pizza</NavLink>
+          <NavLink to="/dessert">Dessert</NavLink>
+          <NavLink to="/drink">Drink</NavLink>
+        </NavBar>
       </Content>
     </Wrapper>
   );

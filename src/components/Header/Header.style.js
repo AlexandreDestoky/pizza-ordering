@@ -8,10 +8,14 @@ export const IconImg = styled.img`
 export const Wrapper = styled.header`
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: darkred;
   height: 70px;
   border-bottom: 1px solid #ddd;
-  `;
+  @media screen and (max-width: 767px) {
+    height:55px;
+    border:none;
+  }
+`;
 
 export const Content = styled.div`
   align-items: center;
@@ -19,4 +23,57 @@ export const Content = styled.div`
   width: 80%;
   margin: auto;
   height: 100%;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+`;
+
+export const Hamburger = styled.img`
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 20px;
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+`;
+
+export const NavBar = styled.nav`
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  flex: 1 1 0px;
+  width: 40%;
+  a {
+    text-decoration: none;
+    color: #eee;
+    &.active {
+      /* border-bottom: 3px solid #6f1d1b; */
+      border-bottom: 3px solid #eee;
+    }
+    &:hover {
+      /* color: #6f1d1b; */
+      color: #bbb;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    background: brown;
+    width: 100%;
+    text-align: center;
+    gap: 0;
+    display: ${props => (props.isNavShow ? "flex" : "none")};
+    a {
+      padding: 10px;
+      border-top: 1px solid black;
+    }
+    a.active {
+      border-bottom: none;
+      text-decoration: none;
+    }
+  }
 `;
