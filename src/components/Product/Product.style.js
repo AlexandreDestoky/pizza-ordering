@@ -12,6 +12,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
+  h2 {
+    font-size:1rem;
+  }
   div {
     display: flex;
     justify-content: space-between;
@@ -22,4 +25,7 @@ export const Content = styled.div`
   font-size: .9rem;
   padding: 5px 10px;
   font-family:'Arial';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;

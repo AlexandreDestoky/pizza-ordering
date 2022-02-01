@@ -11,6 +11,15 @@ export const Wrapper = styled.div`
     width: 70%;
     object-fit: cover;
   }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    img {
+      width:100%;
+      height:100px;
+    }
+    margin-bottom:50px;
+
+  }
 `;
 
 export const Detail = styled.div`
@@ -33,6 +42,11 @@ export const Detail = styled.div`
       &::before {
         content: "▶ ";
       }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    p,li {
+      font-size: 1rem;
     }
   }
 `;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   padding: 10px 15px;
+  height: ${props => props.height || ""};
   border: none;
   cursor: pointer;
   background: ${props => props.bg || "#bd0f0f"};

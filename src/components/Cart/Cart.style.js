@@ -15,6 +15,17 @@ export const Wrapper = styled.div`
     font-weight: bold;
     padding: 5px 0;
   }
+  @media screen and (max-width: 992px) {
+    display: none;
+    &.shown {
+      display: block;
+      position: fixed;
+      top: 5px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 40px);
+    }
+  }
 `;
 
 export const Total = styled.div`
@@ -33,6 +44,23 @@ export const Message = styled.p`
 `;
 
 export const CartProductList = styled.div`
-  height: 50vh;
   overflow: auto;
+  height: 300px;
+  @media screen and (max-width: 992px) {
+    height: 65vh;
+  }
+`;
+
+export const Content = styled.div`
+  height: 400px;
+  @media screen and (max-width: 992px) {
+    height: calc(100vh - 100px);
+  }
+`;
+
+export const Header = styled.div`
+  height: 100px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;

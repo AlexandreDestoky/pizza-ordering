@@ -88,7 +88,7 @@ export const dataFood = {
     },
     {
       id: 49,
-      name: "chocolate chip cookie",
+      name: "cookie",
       price: 1.95,
       ing: ["An american Chocolate Chip Cookie with delicious chocolate!"],
       img: require("./dessert/chocolate_chip_cookie.jpg"),

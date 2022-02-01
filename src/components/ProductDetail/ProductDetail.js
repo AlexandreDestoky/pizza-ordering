@@ -26,7 +26,7 @@ export default function ProductDetail() {
     dispatch(addToCart(curProduct));
     setTimeout(() => {
       navigate(`/${product}`)
-    }, 300);
+    }, 200);
   }
 
   return (
