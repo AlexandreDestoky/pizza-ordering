@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
   h2 {
     text-align: center;
     font-weight: bold;
