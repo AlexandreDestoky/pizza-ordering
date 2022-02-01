@@ -13,15 +13,15 @@ export const Content = styled.div`
 `;
 
 export const CartButton = styled(Button)`
-  background: brown;
+  background: var(--primary);
   user-select: none;
-  color: black;
+  color: var(--black);
   display: none;
-  height:40px;
-  color:#eee;
+  height: 40px;
+  color: var(--lightGrey);
   @media screen and (max-width: 992px) {
     display: block;
-    font-size:1rem;
+    font-size: 1rem;
     position: fixed;
     bottom: 0;
     width: 100%;

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  border: 1px solid #ddd;
+  border: 1px solid var(--darkGrey);
   height: fit-content;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 5px;
   position: sticky;
   top: 90px;
@@ -34,7 +34,7 @@ export const Total = styled.div`
   justify-content: space-between;
   font-size: 1.2rem;
   font-weight: bold;
-  background: #eee;
+  background: var(--darkGrey);
   padding: 15px;
 `;
 
@@ -61,7 +61,7 @@ export const Content = styled.div`
 
 export const Header = styled.div`
   height: 100px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 `;

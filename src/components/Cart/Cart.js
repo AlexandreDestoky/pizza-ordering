@@ -7,15 +7,15 @@ import { Button } from "../../shared/Button.style";
 import { useNavigate } from "react-router-dom";
 
 export default function Cart(props) {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const total = useSelector(state => state.cart.total);
   const products = useSelector(state => state.cart.products);
   const emptyCart = products.length === 0;
 
   const payment = () => {
     navigate("/payment");
-    props.changeShown(false)
-  }
+    props.changeShown(false);
+  };
 
   return (
     <Wrapper className={props.shown ? "shown" : ""}>

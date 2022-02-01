@@ -6,7 +6,7 @@ import { InputBox, Wrapper, Form } from "./Payment.style";
 
 export default function Payment() {
   const emptyCart = useSelector(state => state.cart.products).length === 0;
-  const BtnText = emptyCart ? "Add Product to your cart to validate" :"Validate";
+  const BtnText = emptyCart ? "Add Product to your cart to validate" : "Validate";
   const [isModalShown, setIsModalShown] = useState(false);
 
   const name = useRef();
@@ -46,7 +46,9 @@ export default function Payment() {
           <label htmlFor="mail">Email</label>
           <input type="email" required placeholder="Your email" name="mail" ref={mail} />
         </InputBox>
-        <Button full disabled={emptyCart}>{BtnText}</Button>
+        <Button full disabled={emptyCart}>
+          {BtnText}
+        </Button>
       </Form>
       {isModalShown && (
         <Modal close={closeModal}>

@@ -26,7 +26,7 @@ function App() {
           <Route path="/:product/:id" element={<ProductDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Cart shown={isSmallCartShown} changeShown={setIsSmallCartShown}/>
+        <Cart shown={isSmallCartShown} changeShown={setIsSmallCartShown} />
       </Content>
       <CartButton onClick={() => setIsSmallCartShown(!isSmallCartShown)}>
         View Cart ({nbrProduct})

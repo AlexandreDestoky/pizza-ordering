@@ -8,5 +8,4 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 992px) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
-
 `;

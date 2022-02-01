@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px #00000069;
-  background-color: white;
+  background-color:var(--white);
   img {
     cursor: pointer;
     width: 100%;
@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   h2 {
-    font-size:1rem;
+    font-size: 1rem;
   }
   div {
     display: flex;
@@ -22,9 +22,9 @@ export const Content = styled.div`
     font-size: 1.3rem;
     margin-top: 10px;
   }
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: 5px 10px;
-  font-family:'Arial';
+  font-family: "Arial";
   display: flex;
   flex-direction: column;
   justify-content: space-between;

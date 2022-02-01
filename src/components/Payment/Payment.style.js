@@ -1,17 +1,16 @@
 import styled from "styled-components";
 
-export const Form = styled.form`
-`;
+export const Form = styled.form``;
 
 export const Wrapper = styled.div`
-border: 1px solid black;
-width: 100%;
-max-width: 800px;
-align-self: baseline;
-justify-self: center;
-background: #ddd;
-border-radius: 5px;
-`
+  border: 1px solid black;
+  width: 100%;
+  max-width: 800px;
+  align-self: baseline;
+  justify-self: center;
+  background: var(--darkGrey);
+  border-radius: 5px;
+`;
 
 export const InputBox = styled.div`
   display: flex;

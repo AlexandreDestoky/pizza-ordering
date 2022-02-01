@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   border-bottom: 1px dashed black;
   user-select: none;
-  padding:10px;
+  padding: 10px;
   p {
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   }
   div {
     span {
-      margin:5px;
+      margin: 5px;
     }
   }
-`
+`;

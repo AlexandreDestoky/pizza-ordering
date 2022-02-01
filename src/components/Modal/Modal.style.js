@@ -24,24 +24,23 @@ export const Overlay = styled.div`
 `;
 
 export const Content = styled.div`
-  background: #f1f1f1;
   padding: 14px 28px;
   border-radius: 3px;
   max-width: 600px;
   width: 90%;
   margin: auto;
-  background-color: #ffffff;
+  background-color: var(--white);
   position: relative;
   padding: 40px;
   text-align: center;
-  @media screen and (max-width:800px){
-    padding:40px 5px;
+  @media screen and (max-width: 800px) {
+    padding: 40px 5px;
   }
 `;
 
 export const CloseButton = styled(SmallButton)`
-  position:absolute;
-  top:5px;
-  right:5px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
   border-radius: 0;
-`
+`;

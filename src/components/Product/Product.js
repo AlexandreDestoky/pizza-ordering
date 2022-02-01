@@ -17,7 +17,7 @@ export default function Product(props) {
         <h2>{props.name.toUpperCase()}</h2>
         <div>
           <p>{convToDollar(props.price)}</p>
-          <Button onClick={()=> dispatch(addToCart(props))}>ADD</Button>
+          <Button onClick={() => dispatch(addToCart(props))}>ADD</Button>
         </div>
       </Content>
     </Wrapper>

@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { dataFood } from "../../assets/dataFood";
 import { Detail, Wrapper } from "./ProductDetail.style";
 import { convToDollar } from "../../shared/helper";
 import { Button } from "../../shared/Button.style";
 import { useDispatch } from "react-redux";
-import {addToCart} from "../../features/cart/cartSlice";
+import { addToCart } from "../../features/cart/cartSlice";
 
 export default function ProductDetail() {
   const dispatch = useDispatch();
@@ -14,7 +14,6 @@ export default function ProductDetail() {
   const foodType = Object.keys(dataFood);
   const curProduct = dataFood[product]?.find(el => el.id === +id);
   const descText = curProduct?.ing.length > 1 ? "Ingredients" : "Description";
-
 
   useEffect(() => {
     if (!foodType.includes(product) || !curProduct) {
@@ -25,9 +24,9 @@ export default function ProductDetail() {
   const addDetail = () => {
     dispatch(addToCart(curProduct));
     setTimeout(() => {
-      navigate(`/${product}`)
+      navigate(`/${product}`);
     }, 200);
-  }
+  };
 
   return (
     <>
@@ -40,7 +39,7 @@ export default function ProductDetail() {
               <p>{convToDollar(curProduct.price)}</p>
               <h3>{descText}</h3>
               <ul>
-                {curProduct.ing.map((el,i) => (
+                {curProduct.ing.map((el, i) => (
                   <li key={i}>{el}</li>
                 ))}
               </ul>

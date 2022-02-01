@@ -9,7 +9,7 @@ import ScrollToTop from "./shared/scrollToTop";
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-    <ScrollToTop/>
+      <ScrollToTop />
       <App />
     </BrowserRouter>
   </Provider>,

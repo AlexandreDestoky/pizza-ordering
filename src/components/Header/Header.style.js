@@ -8,12 +8,12 @@ export const IconImg = styled.img`
 export const Wrapper = styled.header`
   position: sticky;
   top: 0;
-  background-color: darkred;
+  background-color: var(--primary);
   height: 70px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--darkGrey);
   @media screen and (max-width: 767px) {
-    height:55px;
-    border:none;
+    height: 55px;
+    border: none;
   }
 `;
 
@@ -50,26 +50,24 @@ export const NavBar = styled.nav`
   width: 40%;
   a {
     text-decoration: none;
-    color: #eee;
+    color: var(--lightGrey);
     &.active {
-      /* border-bottom: 3px solid #6f1d1b; */
-      border-bottom: 3px solid #eee;
+      border-bottom: 3px solid var(--lightGrey);
     }
     &:hover {
-      /* color: #6f1d1b; */
-      color: #bbb;
+      color: var(--darkGrey);
     }
   }
   @media screen and (max-width: 767px) {
     flex-direction: column;
-    background: brown;
+    background: var(--primary);
     width: 100%;
     text-align: center;
     gap: 0;
     display: ${props => (props.isNavShow ? "flex" : "none")};
     a {
       padding: 10px;
-      border-top: 1px solid black;
+      border-top: 1px solid var(--black);
     }
     a.active {
       border-bottom: none;
