@@ -12,7 +12,7 @@ export default function ProductList() {
 
   useEffect(() => {
     if (!foodType.includes(product)) {
-      navigate("/");
+      navigate("/404");
     }
   }, [product]);
 

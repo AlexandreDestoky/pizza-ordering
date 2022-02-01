@@ -17,7 +17,7 @@ export default function ProductDetail() {
 
   useEffect(() => {
     if (!foodType.includes(product) || !curProduct) {
-      navigate("/");
+      navigate("/404");
     }
   }, [foodType, curProduct]);
 

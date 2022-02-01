@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
       top: 5px;
       left: 0;
       width: 100%;
-      height: calc(100vh - 40px);
+      height: calc(100vh - 45px);
     }
   }
 `;

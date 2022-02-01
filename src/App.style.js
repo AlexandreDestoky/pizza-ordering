@@ -5,7 +5,7 @@ export const Content = styled.div`
   display: grid;
   min-height: 100vh;
   grid-gap: 2rem;
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 993px) {
     margin: 20px;
     grid-template-columns: 10fr minmax(300px, 2fr);
   }

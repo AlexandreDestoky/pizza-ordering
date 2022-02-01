@@ -24,7 +24,7 @@ function App() {
           <Route path="/payment" element={<Payment />} />
           <Route path="/:product" element={<ProductList />} />
           <Route path="/:product/:id" element={<ProductDetail />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/404" element={<NotFound />} />
         </Routes>
         <Cart shown={isSmallCartShown} changeShown={setIsSmallCartShown} />
       </Content>

@@ -33,7 +33,7 @@ export const Content = styled.div`
   position: relative;
   padding: 40px;
   text-align: center;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 767px) {
     padding: 40px 5px;
   }
 `;
